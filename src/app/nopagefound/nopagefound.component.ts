@@ -7,17 +7,8 @@ import { Component } from '@angular/core';
 })
 export class NopagefoundComponent {
 
-//ano: number = Date().now();
 
 anoh = new Date().getFullYear();
-
-
- 
-
- constructor() {
-  console.log(this.anoh);
-  }
-
  
   
 }
