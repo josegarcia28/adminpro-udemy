@@ -1,3 +1,4 @@
+import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { LoginComponent } from './login/login.component';
@@ -12,5 +13,8 @@ const routes: Routes = [
 
 ];
 
-// export const AUTH_ROUTES = RouterModule.forRoot( routes, { useHash: true } );
-export const AUTH_ROUTES = RouterModule.forChild( routes);
+@NgModule({
+    imports: [ RouterModule.forRoot( routes ) ],
+    exports: [ RouterModule ]
+  })
+export class AUTH_ROUTES {}

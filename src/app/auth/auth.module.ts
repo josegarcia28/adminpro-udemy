@@ -1,4 +1,6 @@
 import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 // Rutas
 import { AUTH_ROUTES } from './auth.routing';
@@ -19,7 +21,9 @@ import { RegisterComponent } from './register/register.component';
     RegisterComponent
   ],
   imports: [
-    AUTH_ROUTES
+    AUTH_ROUTES,
+    RouterModule,
+    FormsModule
   ]
  
 })

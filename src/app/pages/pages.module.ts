@@ -14,6 +14,7 @@ import { Graficas1Component } from './graficas1/graficas1.component';
 // RUTA
 import { PAGES_ROUTES } from './pages.routes';
 import { ComponentsModule } from '../components/components.module';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 
 @NgModule({
@@ -21,13 +22,15 @@ import { ComponentsModule } from '../components/components.module';
         PagesComponent,
         DashboardComponent,
         ProgressComponent,
-        Graficas1Component
+        Graficas1Component,
+        AccountSettingsComponent
     ],
     exports: [
         PagesComponent,
         DashboardComponent,
         ProgressComponent,
-        Graficas1Component
+        Graficas1Component,
+        AccountSettingsComponent
     ],
     imports: [
         CommonModule,
