@@ -15,6 +15,8 @@ import { Graficas1Component } from './graficas1/graficas1.component';
 import { PAGES_ROUTES } from './pages.routes';
 import { ComponentsModule } from '../components/components.module';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
+import { PromesasComponent } from './promesas/promesas.component';
+import { RsjxComponent } from './rsjx/rsjx.component';
 
 
 @NgModule({
@@ -23,7 +25,9 @@ import { AccountSettingsComponent } from './account-settings/account-settings.co
         DashboardComponent,
         ProgressComponent,
         Graficas1Component,
-        AccountSettingsComponent
+        AccountSettingsComponent,
+        PromesasComponent,
+        RsjxComponent
     ],
     exports: [
         PagesComponent,
